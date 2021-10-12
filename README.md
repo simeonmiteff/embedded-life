@@ -87,12 +87,7 @@ Starting execution at address 0x08000000... done.
 
 ### The Raspberry Pi
 
-To try this on a Raspberry Pi, wire the SSD1306 OLED display as follows:
-
-<insert diagram>
-
-The I2C device file is hard coded (to `/dev/i2c-0`) in `life-raspi/src/main.rs`. If you're not using the first
-I2C bus, edit as required.
+To try this on a Raspberry Pi, wire the SSD1306 OLED display to one of the I2C busses. The I2C device file is hard coded (to `/dev/i2c-0`) in `life-raspi/src/main.rs`. If you're not using the first I2C bus, edit as required. Note that depending on the Pi model, you may also need to edit the `/boot/config.txt` file (and reboot) to enable I2C.
 
 Running the code is as simple as copying `target/armv7-unknown-linux-gnueabihf/release/life-raspi` to the Pi 
 (`scp` or transfer by USB drive) and then running it with `./life-raspi`.
