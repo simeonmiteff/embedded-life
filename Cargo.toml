@@ -1,0 +1,3 @@
+[workspace]
+
+members = ["life", "life-simulator", "life-raspi", "life-maple-mini"]

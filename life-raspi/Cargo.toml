@@ -1,0 +1,9 @@
+[package]
+name = "life-raspi"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+ssd1306 = "0.7"
+linux-embedded-hal = "0.3"
+life-hal = { path = "../life-hal" }

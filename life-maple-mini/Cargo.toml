@@ -1,0 +1,11 @@
+[package]
+name = "life-maple-mini"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+life-hal = { path = "../life-hal" }
+panic-halt = "0.2"
+ssd1306 = "0.7"
+cortex-m-rt = "0.6"
+stm32f1xx-hal = { version = "0.7", features = [ "rt", "stm32f103" ] }

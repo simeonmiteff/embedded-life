@@ -1,0 +1,18 @@
+[package]
+name = "life"
+version = "0.1.0"
+edition = "2018"
+license = "Apache-2.0"
+authors = ["Simeon Miteff <simeon@miteff.co>" ]
+readme = "README.md"
+homepage = "https://fdi.sk/posts/embedded-life"
+repository = "https://github.com/simeonmiteff/embedded-life"
+documentation = "https://docs.rs/embedded-life"
+description = "embedded-life is Conway's Game Of Life rendered on an OLED display, and built for an Arm Cortex-M (STM32F103), Raspberry Pi and a SDL-based simulator. It demonstrates using the power of Rust embedded-hal abstraction to write portable code."
+keywords = ["hal", "game-of-life", "embedded", "abstractions"]
+categories = ["embedded", "visualization", "no-std", "games"]
+
+[dependencies]
+heapless = "0.7"
+hash32 = "0.2"
+

@@ -1,0 +1,9 @@
+[package]
+name = "life-simulator"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+life = { path = "../life" }
+embedded-graphics-simulator = "0.3"
+embedded-graphics = "0.7"

@@ -1,0 +1,9 @@
+[package]
+name = "life-hal"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+life = { path = "../life" }
+ssd1306 = "0.7.0"
+embedded-graphics = "0.7"
