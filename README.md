@@ -55,7 +55,16 @@ $ ./target/release/life-simulator
 
 If you have a maple mini clone, and an SSD1306 OLED display, you can wire them up as follows:
 
-<insert diagram>
+- ssd1306 SDA to mini pin 15
+- ssd1306 SCL to mini pin 16
+- ssd1306 VCC to mini VCC
+- ssd1306 GND to mini GND
+- mini BUT to mini VCC
+- mini pin 2 (boot) to mini GND
+- mini GND to UART GND
+- mini VIN to UART 3.3V
+- mini pin 25 (rx1) to UART TXD
+- mini pin 24 (tx1) to UART RXD
 
 The script in `life-maple-mini/build-and-flash.sh` takes a USB serial device file argument, and uses `stm32flash` to
 program the STM32 (remember to press the reset button first):
